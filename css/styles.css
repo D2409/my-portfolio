@@ -1,0 +1,727 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+/* General Section Styles */
+#about-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 0 50px;
+    background-color: #1d1d1d; /* Dark background similar to the example */
+    color: white;
+}
+
+.content-left, .content-right {
+    width: 45%; /* Adjust the width of each column */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #D3D3D3; /* Lighter text color for the description */
+}
+
+#work-experience {
+    padding: 50px;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.client-logo img {
+    max-width: 100%; /* Ensures image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    opacity: 0.9; /* Slight transparency for blending */
+    filter: brightness(120%); /* Brighten image to contrast dark background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds subtle shadow */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.client-logo img:hover {
+    opacity: 1; /* Full opacity on hover */
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.content-left, .content-right {
+    width: 45%;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+    color: #D3D3D3;
+}
+
+/* Layout Styles */
+#about-intro, #work-with, #brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about-intro .content-left, #about-intro .content-right,
+#work-with .content-left, #work-with .content-right,
+#brands .content-left, #brands .content-right {
+    width: 48%;
+}
+
+/* Brands Logos */
+.brands-logos img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+/* Latest Work Section */
+#latest-work {
+    text-align: center;
+}
+
+#latest-work h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.work-item img {
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+.work-item .work-description {
+    max-width: 400px;
+}
+
+/* Get In Touch Section */
+#get-in-touch {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#get-in-touch h2 {
+    font-size: 5rem;
+    color: #FF6F61;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 2px solid #FF6F61;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #FF6F61;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;  /* Adjust padding for space */
+    display: flex;
+    justify-content: space-between;  /* Align nav-left to the left and nav-right to the right */
+    align-items: center;  /* Ensure both sections stay centered vertically */
+    background-color: transparent;
+    z-index: 1000;
+}
+
+/* Navigation Links (Left) */
+.nav-left {
+    display: flex;
+    flex-grow: 1;  /* Allows nav-left to grow and push nav-right */
+}
+
+.nav-left li {
+    margin-right: 40px;  /* Space between Works, Contact, Bio */
+}
+
+.nav-left li a {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-left li a:hover {
+    color: #FF6F61;
+}
+
+.nav-left li a.active {
+    font-weight: 700;  /* Bold the active menu item */
+}
+
+/* Social Media Icons (Right) */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-right li {
+    margin-left: 20px;  /* Spacing between the icons */
+}
+
+.nav-right li a {
+    font-size: 1.6rem;  /* Icon size */
+}
+
+.nav-right li a:hover {
+    color: #FF6F61;  /* Hover effect for icons */
+}
+
+/* Hero Section with Name and Title */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;  /* Aligns the content to the right */
+    align-items: center;  /* Vertically centers the content */
+    padding-right: 50px;
+    text-align: right;  /* Aligns text to the right */
+}
+
+.hero-content {
+    max-width: 50%;  /* Adjust the width of the hero content */
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Fix the Flexbox Row */
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;  /* Keeps left and right aligned */
+    align-items: center;  /* Keeps everything vertically centered */
+}
+
+/* Scroll Down Icon */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;  /* Distance from the bottom of the viewport */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust centering */
+    font-size: 2rem;
+    z-index: 1;  /* Ensure it stays above other content */
+}
+
+.scroll-down i {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.scroll-down i:hover {
+    color: #FF6F61;  /* Hover effect for the arrow */
+}
+
+/* Video Background */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video scales to cover the entire section */
+    z-index: -1;  /* Places the video behind the content */
+    opacity: 0.8;  /* Adjust opacity to dim the video slightly */
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    text-align: right;
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 1;  /* Ensures the content stays above the video */
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Scroll Down Icon */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    z-index: 1;  /* Keeps the arrow above the video */
+}
+
+.scroll-down i {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.scroll-down i:hover {
+    color: #FF6F61;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e55d52;  /* Slightly darker on hover */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;  /* Enables smooth scrolling between sections */
+}
+
+/* Aligning Text */
+.content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Section Layout */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* Content Alignment */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Side (About Me or Section Title) */
+.content-left {
+    width: 50%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.content-left h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Right Side (Options like Startups, etc.) */
+.content-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+/* Work Items on the right (Options for Startups, etc.) */
+.work-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #d3d3d3;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.work-item:hover {
+    color: white;
+}
+
+/* Custom icon next to each option */
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Section Layout */
+#clients {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+/* Content Alignment */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Side (Text) */
+.content-left {
+    width: 50%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.content-left h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Right Side (Logos) */
+.content-right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.client-logo {
+    width: 45%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.client-logo img:hover {
+    opacity: 1;
+}
+
+/* Latest Work Section */
+#latest-work {
+    background-color: #181818;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* Work Header */
+.work-header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ff6f61;  /* Similar pink color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+
+/* Work Container */
+.work-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #202020;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Work Item */
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Work Thumbnail */
+.work-thumbnail img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.work-thumbnail img:hover {
+    transform: scale(1.05);
+}
+
+/* Work Details */
+.work-details h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.work-details p {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+}
+
+/* View Project Button */
+.view-project a {
+    text-decoration: none;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.view-project a .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.view-project a:hover {
+    background-color: #e95d53;
+}
+
+/* Contact Section */
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #FF6F61;
+    margin-bottom: 20px;
+}
+
+#contact .email-link {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#contact .email-link:hover {
+    background-color: #FF6F61;
+    border-color: #FF6F61;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact h1 {
+        font-size: 5rem;
+    }
+
+    #contact .email-link {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #latest-work {
+        padding: 50px 20px;
+    }
+
+    .work-header h1 {
+        font-size: 3rem;
+    }
+
+    .work-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .work-details p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content-left, .content-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-left h2 {
+        font-size: 2.5rem;
+    }
+
+    .work-item {
+        font-size: 1.2rem;
+    }
+}
+
+.timeline-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timeline-item a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+  }
+  
+  .timeline-item a:hover {
+    color: #FF6347; /* Optional: Change the color on hover */
+  }
+  
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #about-intro {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust */
+        padding: 40px 20px;
+    }
+
+    .content-left, .content-right {
+        width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Center text on mobile */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Adjust for mobile */
+    }
+
+    p {
+        font-size: 1.1rem; /* Adjust for mobile */
+    }
+}
+ 
