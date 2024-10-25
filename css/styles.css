@@ -725,56 +725,107 @@ section {
     }
 }
  
-/* Mobile-Only Styles */
+/* Full Mobile-Specific CSS */
+
+/* General adjustments for mobile */
 @media (max-width: 768px) {
-    /* Stack layout vertically on mobile */
-    .content {
-        flex-direction: column;
-    }
 
-    .content-left, .content-right {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    /* Adjust font sizes for mobile */
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
-
-    /* Hero Section */
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-
-    /* Navigation adjustments */
-    .nav-left, .nav-right {
+    /* Navigation Bar */
+    nav ul {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    /* Timeline adjustments */
-    #timeline .timeline-item {
-        width: 100%;
-        margin: 20px 0;
+    nav ul li {
+        margin-bottom: 20px;
     }
 
-    /* Latest Work and Contact adjustments */
-    .work-header h1, #contact h1 {
-        font-size: 3rem;
+    nav ul li a {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    /* Hero Section */
+    .hero-content {
+        max-width: 80%; /* Reduce the width of hero content */
+        text-align: center; /* Center align the text */
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .hero-content p {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    /* Scroll Down Icon */
+    .scroll-down {
+        bottom: 20px; /* Adjust positioning */
+    }
+
+    .scroll-down i {
+        font-size: 1.5rem; /* Smaller icon size */
+    }
+
+    /* About Section */
+    .content-left, .content-right {
+        width: 100%; /* Make sections full-width on mobile */
+        text-align: center;
+        padding: 10px;
+    }
+
+    #bio h2, #bio p {
+        text-align: center;
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    p {
+        font-size: 1.1rem; /* Adjust paragraph size */
+    }
+
+    /* Latest Work Section */
+    #latest-work h2 {
+        font-size: 2rem; /* Reduce the size of the "Latest Work" heading */
+    }
+
+    .work-item {
+        flex-direction: column; /* Stack items vertically on mobile */
+        text-align: center;
+    }
+
+    .work-item h3 {
+        font-size: 1.5rem; /* Reduce project title size */
+    }
+
+    .work-item p {
+        font-size: 1rem; /* Reduce project description size */
+        line-height: 1.4;
+    }
+
+    /* Client Logos */
+    .client-logo img {
+        max-width: 80%; /* Reduce client logo size */
+        height: auto;
+    }
+
+    /* Contact Section */
+    #contact h1 {
+        font-size: 3rem; /* Reduce font size */
     }
 
     #contact .email-link {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Adjust button font size */
         padding: 8px 15px;
+    }
+
+    /* General Section Padding */
+    section {
+        padding: 20px;
     }
 }
